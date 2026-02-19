@@ -11,8 +11,8 @@
   <packaging>jar</packaging>
 
   <name>Tukaram SonarQube Project</name>
-  <description>Sample Maven project integrated with Jenkins, SonarQube, and Nexus</description>
-  <url>http://13.203.18.114:8081/</url>
+  <description>Sample Maven project integrated with Jenkins, SonarQube, and Jfrog</description>
+  <url>http://13.205.133.71:8081/</url>
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
@@ -31,12 +31,13 @@
 
   <distributionManagement>
     <repository>
-      <id>nexus</id>
-      <url>http://13.203.18.114:8081/repository/maven-releases/</url>
+        <id>central</id>
+        <name>ip-172-31-26-65-releases</name>
+        <url>http://13.205.133.71:8081/artifactory/libs-release</url>
     </repository>
     <snapshotRepository>
-      <id>nexus</id>
-      <url>http://13.203.18.114:8081/repository/maven-snapshots/</url>
+      <id>central</id>
+      <url>http://13.205.133.71:8081/artifactory/libs-release</url>
     </snapshotRepository>
   </distributionManagement>
 
